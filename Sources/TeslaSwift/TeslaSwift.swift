@@ -936,7 +936,7 @@ extension TeslaSwift {
                     } else {
                         completion(Result.failure(TeslaError.networkError(error: NSError(domain: "TeslaError", code: httpResponse.statusCode, userInfo: nil))))
                     }
-                }.resume()
+                }
             }
         })
 
